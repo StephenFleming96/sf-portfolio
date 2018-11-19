@@ -2,6 +2,12 @@ $nav-link-colour: rgba(21, 169, 255, 0.938);
 $nav-link-hover-colour: #75bcff;
 $nav-link-hover-accent: #99ccff;
 
+$menu-full-background: rgb(3, 3, 49);
+
+.list-links-container {
+	display: flex;
+}
+
 .list-links li {
   display: inline;
   padding: 5px;
@@ -19,6 +25,11 @@ $nav-link-hover-accent: #99ccff;
   border-bottom: 2px solid $nav-link-hover-accent;
 }
 
+.list-burger-container {
+	display: flex;	
+	align-self: center;
+}
+
 .list-burger {
   display: none;
 }
@@ -29,9 +40,25 @@ $nav-link-hover-accent: #99ccff;
 }
 
 @media (max-width: 768px) {
-  .list-links,
+  .list-links-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: $menu-full-background;
+
+    display: flex;
+    justify-content: center;
+  }
+
+  .list-links {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
   .list-links li {
-    display: none;
+    padding: 15px;
+    font-size: 2em;
   }
 
   .list-burger {
@@ -41,5 +68,16 @@ $nav-link-hover-accent: #99ccff;
 
   .list-burger li {
     align-self: center;
+  }
+
+  .list-burger-container {
+	  position: fixed;
+	  display: inline;
+	  z-index: 10;
+  }
+
+  .list-burger-abs {
+	  font-size: 3em;
+	  letter-spacing: 4px;
   }
 }
