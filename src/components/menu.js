@@ -12,10 +12,24 @@ class Menu extends Component {
     this.getMenuBurger = this.getMenuBurger.bind(this);
     this.isSmallScreen = this.isSmallScreen.bind(this);
 
+    this.shouldLinksBeVisible = this.shouldLinksBeVisible.bind(this);
+
+    this.windowResizeHandler = this.windowResizeHandler.bind(this);
+
     this.state = {
-	  menuOpen: false,
-	  displayListItems: true
+      menuOpen: false,
+      displayListItems: true
     };
+
+    window.addEventListener("resize", this.windowResizeHandler);
+  }
+
+  windowResizeHandler() {
+    this.state.displayListItems = this.shouldLinksBeVisible();
+  }
+
+  shouldLinksBeVisible() {
+    return !this.isSmallScreen() || this.state.menuOpen;
   }
 
   isSmallScreen() {
@@ -30,7 +44,7 @@ class Menu extends Component {
   getMenuBurger() {
     let burgerClassName = "list-burger";
 
-    if (this.state.menuOpen) burgerClassName += " list-burger-abs";
+    if (this.shouldLinksBeVisible()) burgerClassName += " list-burger-abs";
 
     return (
       <div className="list-burger-container">
@@ -48,29 +62,27 @@ class Menu extends Component {
   }
 
   getMenuItems() {
-    if (!this.isSmallScreen() || this.state.menuOpen || this.state.displayListItems) {
-      return (
-        <div class="list-links-container">
-          <ul className="list-links right flex flex-item-container">
-            <li className="flex-item-center">
-              <NavLink to="/">HOME</NavLink>
-            </li>
-            <li>
-              <NavLink to="/">PROJECTS</NavLink>
-            </li>
-            <li>
-              <NavLink to="/Contact">CONTACT</NavLink>
-            </li>
-          </ul>
-        </div>
-      );
-    }
+    let listContainerClassName =
+      "list-links-container-" + (this.shouldLinksBeVisible() ? "abs" : "none");
 
-    return <div />;
+    return (
+      <div className={listContainerClassName}>
+        <ul className="list-links right flex flex-item-container">
+          <li className="flex-item-center">
+            <NavLink to="/">HOME</NavLink>
+          </li>
+          <li>
+            <NavLink to="/">PROJECTS</NavLink>
+          </li>
+          <li>
+            <NavLink to="/Contact">CONTACT</NavLink>
+          </li>
+        </ul>
+      </div>
+    );
   }
 
   render() {
-
     return (
       <div className="flex flex-item-wide flex-rtl">
         {this.getMenuItems()}

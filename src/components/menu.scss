@@ -5,7 +5,7 @@ $nav-link-hover-accent: #99ccff;
 $menu-full-background: rgb(3, 3, 49);
 
 .list-links-container {
-	display: flex;
+  display: flex;
 }
 
 .list-links li {
@@ -26,8 +26,8 @@ $menu-full-background: rgb(3, 3, 49);
 }
 
 .list-burger-container {
-	display: flex;	
-	align-self: center;
+  display: flex;
+  align-self: center;
 }
 
 .list-burger {
@@ -40,7 +40,11 @@ $menu-full-background: rgb(3, 3, 49);
 }
 
 @media (max-width: 768px) {
-  .list-links-container {
+  .list-links-container-none * {
+	  display: none;
+  }
+
+  .list-links-container-abs {
     position: fixed;
     width: 100%;
     height: 100%;
@@ -71,13 +75,13 @@ $menu-full-background: rgb(3, 3, 49);
   }
 
   .list-burger-container {
-	  position: fixed;
-	  display: inline;
-	  z-index: 10;
+    position: fixed;
+    display: inline;
+    z-index: 10;
   }
 
   .list-burger-abs {
-	  font-size: 3em;
-	  letter-spacing: 4px;
+    font-size: 3em;
+    letter-spacing: 4px;
   }
 }
