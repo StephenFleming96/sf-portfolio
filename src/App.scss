@@ -1,9 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 $bg-colour: rgb(239, 240, 248);
 $main-border-rad: 3px;
 $body-shadow-color: rgba(240, 240, 240, 0.877);//rgba(179, 179, 179, 0.685);
 
 * {
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+h2, h3 {
+  text-align: center;
+  font-weight: bold;  
 }
 
 #root {
