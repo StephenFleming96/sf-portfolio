@@ -24,7 +24,17 @@ class Menu extends Component {
     window.addEventListener("resize", this.windowResizeHandler);
   }
 
+  componentDidMount() {
+    this.windowResizeHandler();
+    window.addEventListener('resize', this.windowResizeHandler);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.windowResizeHandler);
+  }
+
   windowResizeHandler() {
+	this.state.menuOpen = false;
     this.state.displayListItems = this.shouldLinksBeVisible();
   }
 

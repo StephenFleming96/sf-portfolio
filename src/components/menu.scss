@@ -4,6 +4,10 @@ $nav-link-hover-accent: #99ccff;
 
 $menu-full-background: rgb(3, 3, 49);
 
+.list-links-container-none {
+  display: flex;
+}
+
 .list-links-container {
   display: flex;
 }
@@ -41,7 +45,7 @@ $menu-full-background: rgb(3, 3, 49);
 
 @media (max-width: 768px) {
   .list-links-container-none * {
-	  display: none;
+    display: none;
   }
 
   .list-links-container-abs {
