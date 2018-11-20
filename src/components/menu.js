@@ -8,6 +8,8 @@ class Menu extends Component {
     super(props);
 
     this.toggleMenu = this.toggleMenu.bind(this);
+    this.closeMenu = this.closeMenu.bind(this);
+
     this.getMenuItems = this.getMenuItems.bind(this);
     this.getMenuBurger = this.getMenuBurger.bind(this);
     this.isSmallScreen = this.isSmallScreen.bind(this);
@@ -51,6 +53,10 @@ class Menu extends Component {
     this.forceUpdate();
   }
 
+  closeMenu() {
+    this.state.menuOpen = false;
+  }
+
   getMenuBurger() {
     let burgerClassName = "list-burger";
 
@@ -78,13 +84,13 @@ class Menu extends Component {
       <div className={listContainerClassName}>
         <ul className="list-links right flex flex-item-container">
           <li className="flex-item-center">
-            <NavLink to="/">HOME</NavLink>
+            <NavLink to="/" onClick={this.closeMenu}>HOME</NavLink>
           </li>
           <li>
-            <NavLink to="/projects">PROJECTS</NavLink>
+            <NavLink to="/projects" onClick={this.closeMenu}>PROJECTS</NavLink>
           </li>
           <li>
-            <NavLink to="/Contact">CONTACT</NavLink>
+            <NavLink to="/Contact" onClick={this.closeMenu}>CONTACT</NavLink>
           </li>
         </ul>
       </div>
