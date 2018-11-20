@@ -2,7 +2,7 @@ $nav-background: rgba(6, 6, 34, 0.918);
 $nav-background-no-transparent: rgba(6, 6, 34, 1);
 $nav-title-colour: rgba(234, 237, 241, 0.932);
 
-$nav-spacer-colour: rgba(255,255,255,0.2);
+$nav-spacer-colour: rgba(255, 255, 255, 0.2);
 
 .nav {
   position: fixed;
@@ -20,14 +20,14 @@ $nav-spacer-colour: rgba(255,255,255,0.2);
 }
 
 .nav-spacer {
-	padding: 0px 10px 0px 0px;
-	font-size: 2em;
-	color: $nav-spacer-colour;
+  padding: 0px 10px 0px 0px;
+  font-size: 2em;
+  color: $nav-spacer-colour;
 }
 
 .nav-icon {
   color: rgb(240, 0, 0);
   letter-spacing: -5px;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   font-size: 150%;
 }
