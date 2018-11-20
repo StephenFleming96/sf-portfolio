@@ -78,8 +78,6 @@ $menu-button-colour: rgba(215, 233, 255, 0.87);
   }
 
   .list-burger {
-    /*display: flex;
-    justify-content: center;*/
     display: block;
     width: 100%;
     height: 100%;
@@ -98,7 +96,5 @@ $menu-button-colour: rgba(215, 233, 255, 0.87);
     min-width: 55px;
   }
 
-  .list-burger-abs {
-
-  }
+  .list-burger-abs {}
 }

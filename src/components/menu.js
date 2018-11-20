@@ -65,18 +65,10 @@ class Menu extends Component {
       </div>
     );
   }
-/* <ul
-          className={burgerClassName}
-          id="menu-burger"
-          onClick={this.toggleMenu}
-        >
-          <li>|</li>
-          <li>|</li>
-          <li>|</li>
-        </ul>*/
+
   getMenuItems() {
     let listContainerClassName =
-      "list-links-container-" + (this.shouldLinksBeVisible() ? "abs" : "none");
+      "flex list-links-container-" + (this.shouldLinksBeVisible() ? "abs" : "none");
 
     return (
       <div className={listContainerClassName}>
