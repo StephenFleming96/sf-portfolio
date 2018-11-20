@@ -9,6 +9,7 @@ import Footer from "./components/footer";
 //pages
 import Home from "./pages/home";
 import Contact from "./pages/contact";
+import Projects from "./pages/projects";
 
 //styling
 import "bulma/css/bulma.css";
@@ -24,6 +25,7 @@ class App extends Component {
           <div className="body-item">
             <Route exact path="/" component={Home} />
             <Route path="/contact" component={Contact} />
+            <Route path="/projects" component={Projects} />
           </div>
         </div>
       </div>

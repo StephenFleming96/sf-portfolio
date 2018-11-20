@@ -26,15 +26,15 @@ class Menu extends Component {
 
   componentDidMount() {
     this.windowResizeHandler();
-    window.addEventListener('resize', this.windowResizeHandler);
+    window.addEventListener("resize", this.windowResizeHandler);
   }
 
   componentWillUnmount() {
-    window.removeEventListener('resize', this.windowResizeHandler);
+    window.removeEventListener("resize", this.windowResizeHandler);
   }
 
   windowResizeHandler() {
-	this.state.menuOpen = false;
+    this.state.menuOpen = false;
     this.state.displayListItems = this.shouldLinksBeVisible();
   }
 
@@ -58,17 +58,21 @@ class Menu extends Component {
 
     return (
       <div className="list-burger-container">
-        <button className={burgerClassName} id="menu-burger" onClick={this.toggleMenu}>
+        <button
+          className={burgerClassName}
+          id="menu-burger"
+          onClick={this.toggleMenu}
+        >
           | | |
         </button>
-       
       </div>
     );
   }
 
   getMenuItems() {
     let listContainerClassName =
-      "flex list-links-container-" + (this.shouldLinksBeVisible() ? "abs" : "none");
+      "flex list-links-container-" +
+      (this.shouldLinksBeVisible() ? "abs" : "none");
 
     return (
       <div className={listContainerClassName}>
@@ -77,7 +81,7 @@ class Menu extends Component {
             <NavLink to="/">HOME</NavLink>
           </li>
           <li>
-            <NavLink to="/">PROJECTS</NavLink>
+            <NavLink to="/projects">PROJECTS</NavLink>
           </li>
           <li>
             <NavLink to="/Contact">CONTACT</NavLink>
