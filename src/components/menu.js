@@ -58,7 +58,14 @@ class Menu extends Component {
 
     return (
       <div className="list-burger-container">
-        <ul
+        <button className={burgerClassName} id="menu-burger" onClick={this.toggleMenu}>
+          | | |
+        </button>
+       
+      </div>
+    );
+  }
+/* <ul
           className={burgerClassName}
           id="menu-burger"
           onClick={this.toggleMenu}
@@ -66,11 +73,7 @@ class Menu extends Component {
           <li>|</li>
           <li>|</li>
           <li>|</li>
-        </ul>
-      </div>
-    );
-  }
-
+        </ul>*/
   getMenuItems() {
     let listContainerClassName =
       "list-links-container-" + (this.shouldLinksBeVisible() ? "abs" : "none");
