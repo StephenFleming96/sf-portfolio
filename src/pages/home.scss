@@ -15,21 +15,3 @@ $social-background: rgba(240, 240, 240, 0.8);
 .section-content h3 {
 	font-size: 120%;
 }
-
-.img-columns {
-	height: 100%;	
-}
-
-.img-column {
-	height: 100%;
-}
-
-.img-right {
-	float: right;
-}
-
-@media(max-width: 768px) {
-	.img-right {
-		float: none;
-	}
-}

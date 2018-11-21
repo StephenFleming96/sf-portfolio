@@ -3,11 +3,13 @@ import React, {Component} from 'react';
 import GitHubLogo from "../img/GitHub-Mark.png";
 import LinkedIn from "../img/In.png";
 
+import "./social-icons.scss";
+
 const ImgAndDescription = (logo, name, url) => (
-	<div className="column img-column">
+	<div className="column img-column img-parent">
 	  <div className="columns img-columns ">
 		<div className="column is-one-half">
-			<a href={url}>
+			<a href={url} className="img-link">
 		  <img
 			src={logo}
 			alt={name}
