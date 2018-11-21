@@ -1,12 +1,38 @@
-import React from 'react';
-import './home.scss';
+import React from "react";
+import "./home.scss";
 
-import {NavLink} from 'react-router-dom';
+import { NavLink } from "react-router-dom";
+
+import {GitHubLink, LinkedInLink} from "../components/social-icons.js";
 
 const Home = () => (
-	<h1>
-		home
-	</h1>
+  <div>
+    <div className="columns ">
+      <div className="column section-home">
+        <h2>home</h2>
+        <p>
+          sample sample sample sample sample sample sample sample sample sample
+          sample sample sample sample sample sample sample sample{" "}
+        </p>
+      </div>
+    </div>
+    <div className="columns">
+      <div className="column section-content">
+        <h3>Projects</h3>
+        <p>sample sample sample sample sample </p>
+        <p>sample sample sample sample sample </p>
+      </div>
+      <div className="column section-content">
+        <h3>Contact</h3>
+        <p>sample sample sample sample sample </p>
+        <p>sample sample sample sample sample </p>
+      </div>
+    </div>
+    <div className="columns">
+      <GitHubLink/>
+	  <LinkedInLink/>
+    </div>
+  </div>
 );
 
 export default Home;
