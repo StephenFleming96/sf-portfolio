@@ -7,7 +7,7 @@ import "./social-icons.scss";
 
 const ImgAndDescription = (logo, name, url) => (
   <div className="column img-column img-parent">
-    <div className="columns db-border">
+    <div className="columns">
       <div className="column img-column is-one-half ">
         <a href={url} className="img-link img-container">
           <img
@@ -19,8 +19,8 @@ const ImgAndDescription = (logo, name, url) => (
           />
         </a>
       </div>
-      <div className="column flex is-one-half img-container">
-        <a href={url} className="img-name">
+			<div className="column flex is-one-half img-name">
+        <a href={url} className="">
           {name}
         </a>
       </div>
