@@ -1,8 +1,6 @@
 import React from "react";
 import "./home.scss";
 
-import { NavLink } from "react-router-dom";
-
 import {GitHubLink, LinkedInLink} from "../components/social-icons.js";
 
 const Home = () => (
