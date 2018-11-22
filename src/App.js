@@ -1,10 +1,9 @@
 //react imports
 import React, { Component } from "react";
-import { NavLink, Route } from "react-router-dom";
+import { Route } from "react-router-dom";
 
 //components
 import Navbar from "./components/navbar";
-import Footer from "./components/footer";
 
 //pages
 import Home from "./pages/home";
