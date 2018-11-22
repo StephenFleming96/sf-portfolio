@@ -1,7 +1,7 @@
 import React from 'react';
 import {GitHubLink, LinkedInLink} from "../components/social-icons";
 
-import "./contact.scss";
+//import "./contact.scss";
 
 const Contact = () => (
 	<div className="columns">

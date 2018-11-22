@@ -21,14 +21,16 @@ class Menu extends Component {
     window.addEventListener("resize", this.windowResizeHandler);
   }
 
-  componentDidMount() {
-    this.windowResizeHandler();
-    window.addEventListener("resize", this.windowResizeHandler);
-
+  componentWillMount() {
     this.setState({
       menuOpen: false,
       displayListItems: true
     });
+  }
+
+  componentDidMount() {
+    this.windowResizeHandler();
+    window.addEventListener("resize", this.windowResizeHandler);
   }
 
   componentWillUnmount() {
