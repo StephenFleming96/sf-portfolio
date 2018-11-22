@@ -18,10 +18,15 @@ class Menu extends Component {
 
     this.windowResizeHandler = this.windowResizeHandler.bind(this);
 
+    this.setState({
+      menuOpen: false,
+      displayListItems: true
+    });
+    /*
     this.state = {
       menuOpen: false,
       displayListItems: true
-    };
+    };*/
 
     window.addEventListener("resize", this.windowResizeHandler);
   }
@@ -36,8 +41,10 @@ class Menu extends Component {
   }
 
   windowResizeHandler() {
-    this.state.menuOpen = false;
-    this.state.displayListItems = this.shouldLinksBeVisible();
+    this.setState({
+      menuOpen: false,
+      displayListItems: this.shouldLinksBeVisible()
+    });
   }
 
   shouldLinksBeVisible() {
@@ -49,12 +56,12 @@ class Menu extends Component {
   }
 
   toggleMenu() {
-    this.state.menuOpen = !this.state.menuOpen;
+    this.setState({menuOpen: !this.state.menuOpen});
     this.forceUpdate();
   }
 
   closeMenu() {
-    this.state.menuOpen = false;
+    this.setState({menuOpen: false});
   }
 
   getMenuBurger() {
