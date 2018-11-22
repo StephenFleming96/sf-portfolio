@@ -1,6 +1,6 @@
 {
   "name": "sf_portfolio",
-  "homepage": "http://StephenFleming96.github.io/sf-portfolio",
+  "homepage": "https://elegant-dijkstra-721b89.netlify.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -59,10 +59,9 @@
   },
   "scripts": {
     "start": "node scripts/start.js",
-    "build": "node scripts/build.js",
+    "build": "node scripts/build.js --env.SITE_URL=https://elegant-dijkstra-721b89.netlify.com",
     "test": "node scripts/test.js", 
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "predeploy": "npm run build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -118,8 +117,5 @@
     "presets": [
       "react-app"
     ]
-  },
-  "devDependencies": {
-    "gh-pages": "^2.0.1"
   }
 }
