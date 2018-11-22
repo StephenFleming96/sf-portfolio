@@ -1,10 +1,9 @@
 //react imports
 import React, { Component } from "react";
-import { NavLink, Route } from "react-router-dom";
+import { Route } from "react-router-dom";
 
 //components
 import Navbar from "./components/navbar";
-import Footer from "./components/footer";
 
 //pages
 import Home from "./pages/home";
@@ -16,6 +15,10 @@ import "bulma/css/bulma.css";
 import "./App.scss";
 
 class App extends Component {
+  componentDidMount() {
+    document.title = "Steve Fleming | Portfolio";
+  }
+
   render() {
     return (
       <div className="">

@@ -7,7 +7,7 @@ import {GitHubLink, LinkedInLink} from "../components/social-icons.js";
 
 const Home = () => (
   <div>
-    <div className="columns ">
+    <div className="columns">
       <div className="column section-home">
         <h2>home</h2>
         <p>
@@ -16,6 +16,9 @@ const Home = () => (
         </p>
       </div>
     </div>
+
+	<br/>
+	
     <div className="columns">
       <div className="column section-content">
         <h3>Projects</h3>
@@ -28,6 +31,8 @@ const Home = () => (
         <p>sample sample sample sample sample </p>
       </div>
     </div>
+	<br/>
+	
     <div className="columns">
       <GitHubLink/>
 	  <LinkedInLink/>

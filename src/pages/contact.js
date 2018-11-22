@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import {GitHubLink, LinkedInLink} from "../components/social-icons";
 
 import "./contact.scss";

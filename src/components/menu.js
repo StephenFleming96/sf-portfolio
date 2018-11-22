@@ -18,17 +18,17 @@ class Menu extends Component {
 
     this.windowResizeHandler = this.windowResizeHandler.bind(this);
 
-    this.state = {
-      menuOpen: false,
-      displayListItems: true
-    };
-
     window.addEventListener("resize", this.windowResizeHandler);
   }
 
   componentDidMount() {
     this.windowResizeHandler();
     window.addEventListener("resize", this.windowResizeHandler);
+
+    this.setState({
+      menuOpen: false,
+      displayListItems: true
+    });
   }
 
   componentWillUnmount() {
@@ -36,8 +36,10 @@ class Menu extends Component {
   }
 
   windowResizeHandler() {
-    this.state.menuOpen = false;
-    this.state.displayListItems = this.shouldLinksBeVisible();
+    this.setState({
+      menuOpen: false,
+      displayListItems: this.shouldLinksBeVisible()
+    });
   }
 
   shouldLinksBeVisible() {
@@ -49,12 +51,12 @@ class Menu extends Component {
   }
 
   toggleMenu() {
-    this.state.menuOpen = !this.state.menuOpen;
+    this.setState({ menuOpen: !this.state.menuOpen });
     this.forceUpdate();
   }
 
   closeMenu() {
-    this.state.menuOpen = false;
+    this.setState({ menuOpen: false });
   }
 
   getMenuBurger() {
@@ -84,13 +86,19 @@ class Menu extends Component {
       <div className={listContainerClassName}>
         <ul className="list-links right flex flex-item-container">
           <li className="flex-item-center">
-            <NavLink to="/" onClick={this.closeMenu}>HOME</NavLink>
+            <NavLink to="/" onClick={this.closeMenu}>
+              HOME
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/projects" onClick={this.closeMenu}>PROJECTS</NavLink>
+            <NavLink to="/projects" onClick={this.closeMenu}>
+              PROJECTS
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/Contact" onClick={this.closeMenu}>CONTACT</NavLink>
+            <NavLink to="/Contact" onClick={this.closeMenu}>
+              CONTACT
+            </NavLink>
           </li>
         </ul>
       </div>
