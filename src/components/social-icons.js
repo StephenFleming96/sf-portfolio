@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 
 import GitHubLogo from "../img/GitHub-Mark.png";
 import LinkedIn from "../img/In.png";
