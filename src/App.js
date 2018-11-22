@@ -16,6 +16,10 @@ import "bulma/css/bulma.css";
 import "./App.scss";
 
 class App extends Component {
+  componentDidMount() {
+    document.title = "Steve Fleming | Portfolio";
+  }
+
   render() {
     return (
       <div className="">
