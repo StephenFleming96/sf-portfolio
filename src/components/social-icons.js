@@ -19,7 +19,7 @@ const ImgAndDescription = (logo, name, url) => (
 		  /></a>
 		</div>
 		<div className="column flex is-one-half">
-		  <a className="flex-item-center">{name}</a>
+		  <a href={url} className="flex-item-center">{name}</a>
 		</div>
 	  </div>
 	</div>
