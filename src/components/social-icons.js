@@ -6,8 +6,8 @@ import LinkedIn from "../img/In.png";
 import "./social-icons.scss";
 
 const ImgAndDescription = (logo, name, url) => (
-  <div className="column img-column img-parent">
-    <div className="columns">
+  <div className="column img-column img-parent-container">
+    <div className="columns img-parent ">
       <div className="column img-column is-one-half ">
         <a href={url} className="img-link img-container">
           <img

@@ -1,5 +1,7 @@
 .img-parent {
-  display: flex;
+	/*display: flex;
+	align-self: center;*/
+	margin: auto;
 }
 
 .img-column {
@@ -21,6 +23,14 @@
 }
 
 @media (max-width: 768px) {
+	.img-parent-container, .img-parent {
+		width: 100%;
+	}
+
+	.img-parent * {
+		text-align: center;
+	}
+
 	.img-column {
 		width: 50%;
 		margin: 0 auto;
@@ -30,6 +40,11 @@
 
 	.img-name {
 		direction: rtl;	
+	}
+
+	.img-link {
+		align-self: center;
+		align-content: center;
 	}
 
 }
