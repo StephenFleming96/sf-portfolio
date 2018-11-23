@@ -17,7 +17,6 @@
     "case-sensitive-paths-webpack-plugin": "2.1.2",
     "chalk": "2.4.1",
     "css-loader": "1.0.0",
-    "dotenv": "6.0.0",
     "dotenv-expand": "4.2.0",
     "eslint": "5.6.0",
     "eslint-config-react-app": "^3.0.5",
@@ -53,14 +52,17 @@
     "terser-webpack-plugin": "1.1.0",
     "url-loader": "1.1.1",
     "webpack": "4.19.1",
+    "webpack-cli": "^3.1.2",
     "webpack-dev-server": "3.1.9",
     "webpack-manifest-plugin": "2.0.4",
     "workbox-webpack-plugin": "3.6.3"
   },
   "scripts": {
     "start": "node scripts/start.js",
-    "build": "node scripts/build.js --env.SITE_URL=https://elegant-dijkstra-721b89.netlify.com",
-    "test": "node scripts/test.js", 
+    "build": "node scripts/build.js",
+    "local-build": "PUBLIC_URL=http://localhost:5000 node scripts/build.js serve -s build",
+    "local-serve": "serve -s build",
+    "test": "node scripts/test.js",
     "predeploy": "npm run build"
   },
   "eslintConfig": {
@@ -117,5 +119,8 @@
     "presets": [
       "react-app"
     ]
+  },
+  "devDependencies": {
+    "dotenv": "^6.0.0"
   }
 }
