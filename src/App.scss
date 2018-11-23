@@ -4,6 +4,10 @@ $bg-colour: rgb(239, 240, 248);
 $main-border-rad: 3px;
 $body-shadow-color: rgba(240, 240, 240, 0.877);//rgba(179, 179, 179, 0.685);
 
+$in-progress-bg: rgba(226, 226, 226, 0.568);
+$in-progress-text: #111;
+$in-progress-shadow: rgba(33, 33, 33, 0.096);
+
 * {
   font-family: "Roboto", sans-serif;
 }
@@ -148,4 +152,14 @@ body {
   .body-item {
     width: 100%;
   }
+}
+
+.site-in-progress-warning {
+  background: $in-progress-bg;
+  color: $in-progress-text;
+  padding: 5px;
+  text-align: center;
+  border-radius: 2px;
+  box-shadow: 0px 1px 2px 1px $in-progress-shadow;
+  font-size: 110%;
 }
