@@ -26,6 +26,14 @@ class App extends Component {
 
         <div className="body flex flex-item-container flex-hoz-center">
           <div className="body-item">
+            <div class="site-in-progress-warning">
+              <p>
+                This site is under construction. It does not represent the final
+                product or my best work!
+              </p>
+            </div>
+            <br />
+            
             <Route exact path="/" component={Home} />
             <Route path="/contact" component={Contact} />
             <Route path="/projects" component={Projects} />
