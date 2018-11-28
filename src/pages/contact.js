@@ -15,7 +15,7 @@ const Contact = () => (
         ,
       </p>
       <p>
-        or email at
+        or email at {" "}
         <a href="mailto:fleming.steve72@gmail.com">fleming.steve72@gmail.com</a>
       </p>
     </div>
