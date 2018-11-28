@@ -34,7 +34,7 @@ class App extends Component {
             <div class="site-in-progress-warning">
               <p>
                 This site is under construction. It does not represent the final
-                product or my best work!
+                product or my best work! Latest update: 28th November 2018.
               </p>
             </div>
           </div>
