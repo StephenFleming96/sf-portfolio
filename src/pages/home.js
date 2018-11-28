@@ -33,15 +33,14 @@ const Home = () => (
         <h3>
           <NavLink to="/projects">Projects</NavLink>
         </h3>
-        <p>sample sample sample sample sample </p>
-        <p>sample sample sample sample sample </p>
+        <p>In this section, I list and demonstrate some of the projects that I have created.</p>
+        <p>Visit here for links to Github repositories showing my work.</p>
       </div>
       <div className="column section-content">
         <h3>
           <NavLink to="/contact">Contact</NavLink>
         </h3>
-        <p>sample sample sample sample sample </p>
-        <p>sample sample sample sample sample </p>
+        <p>This page provides links to my social accounts and provides contact information.</p>
       </div>
     </div>
     <br />
