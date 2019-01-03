@@ -12,8 +12,7 @@ const Home = () => (
         <br/>
         <p>
           My name is Steve. I am a recent Computer Science graduate based in
-          Melbourne looking for work as a front-end, back-end or full stack
-          developer.
+          Melbourne looking for junior-level work as a Front End Developer.
         </p>
         <p>
           I have strong HTML, CSS and Javascript skills and am confident in

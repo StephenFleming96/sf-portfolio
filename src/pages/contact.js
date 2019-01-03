@@ -11,8 +11,7 @@ const Contact = () => (
       <p>Melbourne, Australia</p>
       <br />
       <p>
-        I can be reached via phone at <a href="tel:0422259905">04 222 599 05</a>
-        ,
+        I can be reached via phone at <a href="tel:0422259905">04 222 599 05</a>,
       </p>
       <p>
         or email at {" "}
