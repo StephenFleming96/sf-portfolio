@@ -17,6 +17,14 @@ h2, h3 {
   font-weight: bold;  
 }
 
+h2 {
+  font-size: 130%;
+}
+
+h3 {
+  font-size: 120%;
+}
+
 #root {
   height: 100%;
 }
@@ -25,8 +33,16 @@ h2, h3 {
   display: flex;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .flex-column {
   flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
 }
 
 .flex-item-container {
@@ -83,6 +99,11 @@ h2, h3 {
 
 .three-quart {
   max-width: 75%;
+}
+
+.half {
+  max-width: 50%;
+  margin: 0 auto;
 }
 
 .bottom-margin {
