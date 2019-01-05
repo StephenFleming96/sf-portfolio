@@ -6,7 +6,7 @@ const Footer = () => (
     <div class="site-in-progress-warning">
       <p>
         This site is under construction. It does not represent the final product
-        or my best work! Latest update: 22nd December 2018.
+        or my best work! Latest update: 5th January 2019.
       </p>
     </div>
   </div>
