@@ -6,8 +6,8 @@ import { NavLink } from "react-router-dom";
 
 const Home = () => (
   <div>
-    <div className="columns flex flex-hoz-center">
-      <div className="column three-quart section-home flex-item-center">
+    <div className="flex flex-hoz-center">
+      <div className="three-quart section-home flex-item-center">
         <h2>About Me</h2>
         <br/>
         <p>
@@ -27,7 +27,7 @@ const Home = () => (
 
     <br />
 
-    <div className="columns">
+    <div className="">
       <div className="column section-content">
         <h3>
           <NavLink to="/projects">Projects</NavLink>
