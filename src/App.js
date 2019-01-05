@@ -4,6 +4,7 @@ import { Route } from "react-router-dom";
 
 //components
 import Navbar from "./components/navbar";
+import Footer from "./components/footer";
 
 //pages
 import Home from "./pages/home";
@@ -30,13 +31,7 @@ class App extends Component {
             <Route path="/contact" component={Contact} />
             <Route path="/projects" component={Projects} />
 
-            <br />
-            <div class="site-in-progress-warning">
-              <p>
-                This site is under construction. It does not represent the final
-                product or my best work! Latest update: 28th November 2018.
-              </p>
-            </div>
+            <Footer/>
           </div>
         </div>
       </div>

@@ -98,7 +98,7 @@ class Menu extends Component {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/Contact" onClick={this.closeMenu}>
+            <NavLink to="/contact" onClick={this.closeMenu}>
               CONTACT
             </NavLink>
           </li>
